@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-function Profile({ avatar, username, tag, location, stats }) {
+export default function Profile({ avatar, username, tag, location, stats }) {
   return (
     <div class="profile">
       <div class="description">
@@ -39,5 +39,3 @@ Profile.propTypes = {
     likes: PropTypes.number.isRequired,
   }),
 };
-
-export default Profile;

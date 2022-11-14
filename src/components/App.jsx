@@ -22,13 +22,12 @@ export const App = () => {
       </div>
       <div>
         <Statistics title="Upload stats" stats={data} />
-        <Statistics stats={data} />
       </div>
       <div>
-        <FriendList friends={friends} />;
+        <FriendList friends={friends} />
       </div>
       <div>
-        <TransactionHistory items={transactions} />;
+        <TransactionHistory items={transactions} />
       </div>
     </div>
   );

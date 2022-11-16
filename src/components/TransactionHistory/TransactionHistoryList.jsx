@@ -1,14 +1,15 @@
 import PropTypes from 'prop-types';
+import { TransactionElem, TransactionItem } from './TransactionHistory.styled';
 
 export default function TransactionHistoryList({ items }) {
   return (
     <tbody>
       {items.map(({ id, type, amount, currency }) => (
-        <tr key={id}>
-          <td>{type}</td>
-          <td>{amount}</td>
-          <td>{currency}</td>
-        </tr>
+        <TransactionItem key={id}>
+          <TransactionElem>{type}</TransactionElem>
+          <TransactionElem>{amount}</TransactionElem>
+          <TransactionElem>{currency}</TransactionElem>
+        </TransactionItem>
       ))}
     </tbody>
   );

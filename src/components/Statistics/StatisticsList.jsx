@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { List, Item, Label, Percentage } from './Statistics.styled';
+
 import getRandomHexColor from './RandomHexColor';
 
 export default function StatisticsList({ items }) {

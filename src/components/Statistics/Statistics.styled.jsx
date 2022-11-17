@@ -1,15 +1,18 @@
 import styled from '@emotion/styled';
 
 export const Section = styled.section`
-  margin: 30px auto;
+  margin: 0 auto;
   max-width: 300px;
   text-align: center;
   background-color: #ffffff;
+  margin-bottom: 32px;
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
 `;
 
 export const Title = styled.h2`
   margin: 0;
-  padding: 30px;
+  padding: 32px;
   text-transform: uppercase;
 `;
 export const List = styled.ul`
@@ -26,11 +29,11 @@ export const Item = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
+  padding: 8px;
   color: #575757;
 `;
 export const Label = styled.span`
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-size: 12px;
   font-weight: 700;
 `;

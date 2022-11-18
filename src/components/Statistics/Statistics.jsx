@@ -5,7 +5,7 @@ import { Section, Title } from './Statistics.styled';
 export default function Statistics({ title, stats }) {
   return (
     <Section>
-      <Title>{title}</Title>
+      {title && <Title>{title}</Title>}
       <>
         <StatisticsList items={stats} />
       </>
